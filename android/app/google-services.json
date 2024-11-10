@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45505186639",
+    "project_id": "hrecorder-82c5c",
+    "storage_bucket": "hrecorder-82c5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45505186639:android:3e7e362cbb7257fd0f133a",
+        "android_client_info": {
+          "package_name": "com.hydraledger.voice_recorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNoJJxHudN10i2vRooPeLpz4yMGFkE6tY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
