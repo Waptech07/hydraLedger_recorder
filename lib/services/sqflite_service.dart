@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:flutter/material.dart';
-import 'package:hydraledger_recorder/models/pdf_save_model.dart';
+import 'package:voice_recorder/models/pdf_save_model.dart';
 
 import '../models/vocie_save_model.dart';
 

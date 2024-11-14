@@ -9,10 +9,10 @@
 // import 'package:hash/hash.dart';
 // import 'package:in_app_review/in_app_review.dart';
 
-// import 'package:hydraledger_recorder/constants/color_constants.dart';
-// import 'package:hydraledger_recorder/models/vocie_save_model.dart';
-// import 'package:hydraledger_recorder/services/sqflite_service.dart';
-// import 'package:hydraledger_recorder/views/homepage/home_screen.dart';
+// import 'package:voice_recorder/constants/color_constants.dart';
+// import 'package:voice_recorder/models/vocie_save_model.dart';
+// import 'package:voice_recorder/services/sqflite_service.dart';
+// import 'package:voice_recorder/views/homepage/home_screen.dart';
 
 // class NameRecord {
 //   Future<bool> nameRecord(

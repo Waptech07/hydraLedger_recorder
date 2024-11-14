@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/botton_nav_bar.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/entry_point.dart';
+import 'package:voice_recorder/botton_nav_bar.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/entry_point.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);

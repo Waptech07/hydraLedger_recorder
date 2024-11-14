@@ -8,17 +8,17 @@ import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/models/request/edit_profile_request.dart';
-import 'package:hydraledger_recorder/services/fs3/fs3_upload_htt.dart';
-import 'package:hydraledger_recorder/services/user/user_http.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/models/request/edit_profile_request.dart';
+import 'package:voice_recorder/services/fs3/fs3_upload_htt.dart';
+import 'package:voice_recorder/services/user/user_http.dart';
 
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/utils/helpers.dart';
-import 'package:hydraledger_recorder/views/enter_email_login_scree.dart';
-import 'package:hydraledger_recorder/widget/my_snackbar.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/utils/helpers.dart';
+import 'package:voice_recorder/views/enter_email_login_scree.dart';
+import 'package:voice_recorder/widget/my_snackbar.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 class PrrofileScreen extends StatefulWidget {
   const PrrofileScreen({super.key});

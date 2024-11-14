@@ -1,4 +1,4 @@
-# hydraledger_recorder
+# voice_recorder
 
 A new Flutter project.
 

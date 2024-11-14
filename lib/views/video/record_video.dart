@@ -2,9 +2,9 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/views/image/image_preview.dart';
-import 'package:hydraledger_recorder/widget/my_snackbar.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/views/image/image_preview.dart';
+import 'package:voice_recorder/widget/my_snackbar.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 import 'package:video_player/video_player.dart';
 
 class RecordVideo extends StatefulWidget {

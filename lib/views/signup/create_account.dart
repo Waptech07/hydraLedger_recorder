@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/signup/signup.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/signup/signup.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 import '../../widget/text_form_list_tile.dart';
 import '../enter_email_login_scree.dart';
@@ -98,6 +98,9 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                   validator: (text) {
                     if (text == null || text.isEmpty) {
                       return 'Kindly enter your password';
+                    }
+                    if (text.length < 8) {
+                      return 'Password atleast 8 digits';
                     }
                     return null;
                   },

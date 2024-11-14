@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:hydraledger_recorder/models/request/morpheus_sign_statement_request.dart';
+import 'package:voice_recorder/models/request/morpheus_sign_statement_request.dart';
 
 import '../base_http.dart';
 

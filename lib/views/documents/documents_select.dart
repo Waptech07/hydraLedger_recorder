@@ -1,8 +1,8 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/views/image/image_preview.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/views/image/image_preview.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 class DocumentSelect extends StatefulWidget {
   final PersistentTabController controller;

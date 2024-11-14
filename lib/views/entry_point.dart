@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/views/signup/create_account.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/views/enter_otp_page.dart';
+import 'package:voice_recorder/views/signup/create_account.dart';
+import 'package:voice_recorder/views/signup/signup.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 import '../state/auth_state.dart';
 
@@ -84,7 +86,7 @@ class _EntryPointState extends State<EntryPoint> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const CreateAccountScreen(),
+                        builder: (context) => EnterOtpPage(),
                       ),
                     );
                   }

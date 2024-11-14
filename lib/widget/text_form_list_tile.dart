@@ -21,7 +21,7 @@ class TextFormListTile extends StatelessWidget {
     this.text,
     required this.textController,
     this.trailing,
-    required this.validator,
+    this.validator,
     required this.keyboardType,
     this.obscureText = false,
     this.readOnly,
@@ -38,9 +38,9 @@ class TextFormListTile extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        if (showTitle)
+        if (showTitle && text != null)
           Text(
-            text!,
+            text ?? '',
             style: GoogleFonts.poppins(
               fontSize: titleFontSize ?? 16.0,
               fontWeight: titleFontWeight ?? FontWeight.w700,
@@ -52,18 +52,20 @@ class TextFormListTile extends StatelessWidget {
           readOnly: readOnly ?? false,
           onTap: onTap,
           controller: textController,
-          validator: validator,
+          validator: validator ?? (_) => null,
           keyboardType: keyboardType,
           obscureText: obscureText,
           obscuringCharacter: '*',
           textInputAction: TextInputAction.next,
           onSaved: (value) {
-            textController.text = value!;
+            if (value != null) {
+              textController.text = value;
+            }
           },
           decoration: InputDecoration(
             hintText: hintText,
             hintStyle: GoogleFonts.poppins(
-              fontSize: 12.0,
+              fontSize: 14.0,
               fontWeight: FontWeight.w400,
               color: Color(0xff171A1F).withOpacity(0.6),
             ),

@@ -5,7 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher_string.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
 
 class ShareAppView extends StatelessWidget {
   const ShareAppView({Key? key}) : super(key: key);
@@ -111,7 +111,7 @@ class ShareAppView extends StatelessWidget {
                   ),
                   onPressed: () {
                     Share.share(
-                        "https://play.google.com/com.hydraledger.hydraledger_recorder");
+                        "https://play.google.com/com.hydraledger.voice_recorder");
                   },
                 ),
               ),

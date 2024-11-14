@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/enter_email_login_scree.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/enter_email_login_scree.dart';
 
 import '../../widget/select_button.dart';
 

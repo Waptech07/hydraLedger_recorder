@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/models/vocie_save_model.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/witness/sign_witness.dart';
+import 'package:voice_recorder/models/vocie_save_model.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/witness/sign_witness.dart';
 
 class ScanQrScreen extends StatefulWidget {
   ScanQrScreen({

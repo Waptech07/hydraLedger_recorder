@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:hydraledger_recorder/api/modechecker.dart';
+import 'package:voice_recorder/api/modechecker.dart';
 
 NetMode netMode = NetMode.dev;
 const String kConsumableId = 'proof';

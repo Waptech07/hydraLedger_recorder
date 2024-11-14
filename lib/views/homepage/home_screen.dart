@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:material_segmented_control/material_segmented_control.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/views/Recording/stop_record_view.dart';
-import 'package:hydraledger_recorder/views/documents/documents_select.dart';
-import 'package:hydraledger_recorder/views/image/image_select.dart';
-import 'package:hydraledger_recorder/views/share_app_view.dart';
-import 'package:hydraledger_recorder/views/video/record_video.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/views/Recording/stop_record_view.dart';
+import 'package:voice_recorder/views/documents/documents_select.dart';
+import 'package:voice_recorder/views/image/image_select.dart';
+import 'package:voice_recorder/views/share_app_view.dart';
+import 'package:voice_recorder/views/video/record_video.dart';
 
 import '../../widget/app_bar.dart';
 

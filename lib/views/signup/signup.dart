@@ -2,18 +2,19 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:country_code_picker/country_code_picker.dart';
+import 'package:csc_picker/csc_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hydraledger_recorder/models/request/create_user_request.dart';
-import 'package:hydraledger_recorder/services/auth/auth_http.dart';
-import 'package:hydraledger_recorder/services/user/user_http.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/enter_otp_page.dart';
-import 'package:hydraledger_recorder/views/signup/login.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/models/request/create_user_request.dart';
+import 'package:voice_recorder/services/auth/auth_http.dart';
+import 'package:voice_recorder/services/user/user_http.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/enter_otp_page.dart';
+import 'package:voice_recorder/views/signup/login.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 import '../../widget/text_form_list_tile.dart';
 
@@ -29,6 +30,7 @@ class _SignupState extends State<Signup> {
   late bool _isPasswordVisible = true;
   bool _isloading = false;
   String _selectedCountryCode = '+234';
+  String countryValue = "";
 
   String getFullPhoneNumber(AuthState authState) {
     final cleanNumber =
@@ -145,7 +147,7 @@ class _SignupState extends State<Signup> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Expanded(
-                          flex: 3,
+                          flex: 2,
                           child: Container(
                             height: 48,
                             margin: EdgeInsets.only(top: 4),
@@ -161,12 +163,12 @@ class _SignupState extends State<Signup> {
                               onChanged: (CountryCode countryCode) {
                                 setState(() {
                                   _selectedCountryCode =
-                                      countryCode.dialCode ?? '+234';
+                                      countryCode.dialCode ?? '+1';
                                 });
                               },
-                              initialSelection: 'NG',
+                              initialSelection: 'US',
                               textOverflow: TextOverflow.visible,
-                              favorite: const ['NG', 'US', 'GB'],
+                              favorite: const ['US', 'NG', '+91', 'GB'],
                               showCountryOnly: false,
                               showOnlyCountryWhenClosed: false,
                               alignLeft: false,
@@ -185,10 +187,10 @@ class _SignupState extends State<Signup> {
                           flex: 4,
                           child: TextFormListTile(
                             showTitle: false,
-                            hintText: '123456789',
+                            hintText: '0000000000',
                             prefixIcon:
                                 null, // Removed since we have country code
-                            titleFontSize: 18.0,
+                            titleFontSize: 20.0,
                             titleFontWeight: FontWeight.w400,
                             textController: authState.phoneController,
                             keyboardType: TextInputType.phone,
@@ -214,44 +216,37 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 const Padding(padding: EdgeInsets.only(top: 12.0)),
-                Row(
-                  children: [
-                    Expanded(
-                      child: TextFormListTile(
-                        readOnly: true,
-                        text: 'Date of birth *',
-                        titleFontSize: 18.0,
-                        titleFontWeight: FontWeight.w400,
-                        textController: authState.dobController,
-                        keyboardType: TextInputType.name,
-                        validator: (text) {
-                          if (text == null || text.isEmpty) {
-                            return 'Kindly enter your date of birth';
-                          }
-                          return null;
-                        },
-                        onTap: () async {
-                          final DateTime now = DateTime.now();
-                          final date = await showDatePicker(
-                            context: context,
-                            initialDate: DateTime(now.year - 18, now.month,
-                                now.day), // Set initial date to 18 years ago
-                            firstDate: DateTime(1900),
-                            lastDate: now, // Set last date to current date
-                            locale: const Locale('en', 'GB'),
-                          );
-                          if (date != null) {
-                            DateFormat formatter = DateFormat("d/MM/yyyy");
-                            authState.dobController.text =
-                                formatter.format(date);
-                            log('date: ${authState.dobController.text}');
-                          }
-                        },
-                      ),
-                    ),
-                    const SizedBox(width: 113),
-                  ],
+                TextFormListTile(
+                  readOnly: true,
+                  text: 'Date of birth *',
+                  titleFontSize: 18.0,
+                  titleFontWeight: FontWeight.w400,
+                  textController: authState.dobController,
+                  keyboardType: TextInputType.name,
+                  validator: (text) {
+                    if (text == null || text.isEmpty) {
+                      return 'Kindly enter your date of birth';
+                    }
+                    return null;
+                  },
+                  onTap: () async {
+                    final DateTime now = DateTime.now();
+                    final date = await showDatePicker(
+                      context: context,
+                      initialDate: DateTime(now.year - 18, now.month,
+                          now.day), // Set initial date to 18 years ago
+                      firstDate: DateTime(1900),
+                      lastDate: now, // Set last date to current date
+                      locale: const Locale('en', 'GB'),
+                    );
+                    if (date != null) {
+                      DateFormat formatter = DateFormat("d/MM/yyyy");
+                      authState.dobController.text = formatter.format(date);
+                      log('date: ${authState.dobController.text}');
+                    }
+                  },
                 ),
+                const SizedBox(width: 113),
                 const Padding(padding: EdgeInsets.only(top: 18.0)),
                 TextFormListTile(
                   text: 'Address *',
@@ -298,7 +293,7 @@ class _SignupState extends State<Signup> {
                         showTitle: false,
                         hintText: 'Zip Code *',
                         textController: authState.zipcodeController,
-                        keyboardType: TextInputType.name,
+                        keyboardType: TextInputType.number,
                         validator: (text) {
                           if (text == null || text.isEmpty) {
                             return 'Kindly enter your zip code';
@@ -310,6 +305,25 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 const Padding(padding: EdgeInsets.only(top: 26.0)),
+                CSCPicker(
+                  showStates: false,
+                  showCities: false,
+                  flagState: CountryFlag.DISABLE,
+                  onCountryChanged: (country) {
+                    setState(() {
+                      authState.countryController.text = country;
+                    });
+                  },
+                  countryDropdownLabel: "Select Country",
+                  dropdownDecoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4.0),
+                    color: Colors.white,
+                    border: Border.all(color: Color(0xff9095A1), width: 1.0),
+                  ),
+                  dropdownHeadingStyle:
+                      TextStyle(color: Colors.black, fontSize: 16),
+                  selectedItemStyle: TextStyle(color: Color(0xff171A1F)),
+                ),
                 TextFormListTile(
                   hintText: 'Country *',
                   prefixIcon: const Icon(

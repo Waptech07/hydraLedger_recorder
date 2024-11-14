@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/globals.dart' as globals;
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/globals.dart' as globals;
 import '../../api/subscriptionmanager.dart';
 
 import '../../services/network_checker.dart';

@@ -7,9 +7,9 @@ import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-import 'package:hydraledger_recorder/models/pdf_save_model.dart';
-import 'package:hydraledger_recorder/models/vocie_save_model.dart';
-import 'package:hydraledger_recorder/utils/pdf/save_pdf.dart';
+import 'package:voice_recorder/models/pdf_save_model.dart';
+import 'package:voice_recorder/models/vocie_save_model.dart';
+import 'package:voice_recorder/utils/pdf/save_pdf.dart';
 
 // class PDFopen extends StatelessWidget {
 //   PDFopen({this.pdfSaveModel, super.key});

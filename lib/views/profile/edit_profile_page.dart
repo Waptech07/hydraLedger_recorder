@@ -2,11 +2,11 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/models/request/edit_profile_request.dart';
-import 'package:hydraledger_recorder/services/user/user_http.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/utils/helpers.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/models/request/edit_profile_request.dart';
+import 'package:voice_recorder/services/user/user_http.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/utils/helpers.dart';
 
 class EditProfilePage extends StatefulWidget {
   final String email;

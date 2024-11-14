@@ -8,8 +8,8 @@ import 'package:intl/intl.dart';
 import 'package:audio_waveforms/audio_waveforms.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/views/Recording/stop_record_view.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/views/Recording/stop_record_view.dart';
 
 class RecordView extends StatefulWidget {
   final PersistentTabController controller;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
 
 class CustomAppBar extends StatelessWidget {
   CustomAppBar(

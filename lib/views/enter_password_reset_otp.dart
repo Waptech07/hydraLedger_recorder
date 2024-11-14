@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/services/auth/auth_http.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/enter_new_password_screen.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/services/auth/auth_http.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/enter_new_password_screen.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 class EnterPasswordResetOtp extends StatefulWidget {
   final String email;

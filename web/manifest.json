@@ -1,6 +1,6 @@
 {
-    "name": "hydraledger_recorder",
-    "short_name": "hydraledger_recorder",
+    "name": "voice_recorder",
+    "short_name": "voice_recorder",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

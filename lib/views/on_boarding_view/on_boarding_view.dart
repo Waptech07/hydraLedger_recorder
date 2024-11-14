@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/utils/pdf/pdf_file.dart';
-import 'package:hydraledger_recorder/views/Recording/record_view.dart';
-import 'package:hydraledger_recorder/views/share_app_view.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/utils/pdf/pdf_file.dart';
+import 'package:voice_recorder/views/Recording/record_view.dart';
+import 'package:voice_recorder/views/share_app_view.dart';
 
 import '../../utils/pdf/save_pdf.dart';
 import '../../widget/widgets.dart';

@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:hydraledger_recorder/botton_nav_bar.dart';
+import 'package:voice_recorder/botton_nav_bar.dart';
 
 class MyBannerAdWidget extends StatefulWidget {
   final Widget? screen;

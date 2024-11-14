@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:hydraledger_recorder/services/base_http.dart';
+import 'package:voice_recorder/services/base_http.dart';
 
 import '../../models/request/create_user_request.dart';
 

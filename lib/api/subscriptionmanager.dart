@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hydraledger_recorder/globals.dart' as globals;
-import 'package:hydraledger_recorder/views/subscription/trial_popup.dart';
+import 'package:voice_recorder/globals.dart' as globals;
+import 'package:voice_recorder/views/subscription/trial_popup.dart';
 
 class SubscriptionManager {
   Future<void> enableSubscription(SubscriptionType type, bool trial,

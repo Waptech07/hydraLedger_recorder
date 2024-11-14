@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/services/auth/auth_http.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/enter_email_login_scree.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
-import 'package:hydraledger_recorder/widget/text_form_list_tile.dart';
+import 'package:voice_recorder/services/auth/auth_http.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/enter_email_login_scree.dart';
+import 'package:voice_recorder/widget/select_button.dart';
+import 'package:voice_recorder/widget/text_form_list_tile.dart';
 
 class EnterNewPassword extends StatefulWidget {
   final String email;

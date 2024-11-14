@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/state/auth_state.dart';
-import 'package:hydraledger_recorder/views/signup/login.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/state/auth_state.dart';
+import 'package:voice_recorder/views/signup/login.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 class EnterOtpPage extends StatefulWidget {
   EnterOtpPage({super.key});
@@ -37,6 +38,7 @@ class _EnterOtpPageState extends State<EnterOtpPage> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
+            const Padding(padding: EdgeInsets.only(top: 40.0)),
             Text.rich(
               TextSpan(
                 children: [
@@ -60,19 +62,37 @@ class _EnterOtpPageState extends State<EnterOtpPage> {
               ),
             ),
             const SizedBox(height: 10),
-            PinCodeTextField(
-              controller: authState.otpController,
-              appContext: context,
-              length: 4,
-              keyboardType: TextInputType.number,
-              onChanged: (value) async {
-                if (value.length == 4) {
-                  setState(() {
-                    authState.isOtpValid = true;
-                  });
-                }
-              },
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 30.0,
+                vertical: 20.0,
+              ),
+              child: PinCodeTextField(
+                pinTheme: PinTheme(
+                  shape: PinCodeFieldShape.underline,
+                  borderWidth: 0,
+                  fieldHeight: 40,
+                  fieldWidth: 40,
+                  activeFillColor: kColorGold,
+                  activeColor: kColorGold,
+                  selectedColor: kColorGold,
+                  inactiveColor: kColorGold,
+                ),
+                controller: authState.otpController,
+                appContext: context,
+                length: 4,
+                cursorColor: kColorBlack,
+                keyboardType: TextInputType.number,
+                onChanged: (value) async {
+                  if (value.length == 4) {
+                    setState(() {
+                      authState.isOtpValid = true;
+                    });
+                  }
+                },
+              ),
             ),
+            // 9135366375
             SizedBox(height: 200),
             SelectButton(
               onPressed: () async {
@@ -110,7 +130,7 @@ class _EnterOtpPageState extends State<EnterOtpPage> {
                     });
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        backgroundColor: Colors.green,
+                        backgroundColor: Colors.red,
                         content: Text('${request['message']}'),
                       ),
                     );

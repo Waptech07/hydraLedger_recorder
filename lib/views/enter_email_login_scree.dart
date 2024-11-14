@@ -4,11 +4,11 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/services/auth/auth_http.dart';
-import 'package:hydraledger_recorder/services/user/user_http.dart';
-import 'package:hydraledger_recorder/views/enter_otp_page.dart';
-import 'package:hydraledger_recorder/views/signup/create_account.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/services/auth/auth_http.dart';
+import 'package:voice_recorder/services/user/user_http.dart';
+import 'package:voice_recorder/views/enter_otp_page.dart';
+import 'package:voice_recorder/views/signup/create_account.dart';
 
 import '../state/auth_state.dart';
 import '../widget/select_button.dart';

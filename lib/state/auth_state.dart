@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hydraledger_recorder/models/vocie_save_model.dart';
-import 'package:hydraledger_recorder/services/auth/auth_http.dart';
+import 'package:voice_recorder/models/vocie_save_model.dart';
+import 'package:voice_recorder/services/auth/auth_http.dart';
 
 class AuthState extends ChangeNotifier {
   static AuthState? _instance;

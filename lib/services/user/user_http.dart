@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:hydraledger_recorder/models/request/edit_profile_request.dart';
-import 'package:hydraledger_recorder/services/base_http.dart';
+import 'package:voice_recorder/models/request/edit_profile_request.dart';
+import 'package:voice_recorder/services/base_http.dart';
 
 class UserHttpService extends HttpService {
   UserHttpService()

@@ -1,4 +1,4 @@
-name: hydraledger_recorder
+name: voice_recorder
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -88,6 +88,7 @@ dependencies:
   flutter_pdfview:
   just_audio:
   country_code_picker: ^3.1.0
+  csc_picker: ^0.2.7
 
 
 

@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hydraledger_recorder/botton_nav_bar.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/views/enter_password_reset_otp.dart';
-import 'package:hydraledger_recorder/widget/text_form_list_tile.dart';
+import 'package:voice_recorder/botton_nav_bar.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/views/enter_password_reset_otp.dart';
+import 'package:voice_recorder/widget/text_form_list_tile.dart';
 
 import '../services/auth/auth_http.dart';
 import '../state/auth_state.dart';

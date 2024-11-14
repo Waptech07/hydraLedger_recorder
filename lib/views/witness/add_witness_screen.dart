@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/models/vocie_save_model.dart';
-import 'package:hydraledger_recorder/services/fs3/fs3_upload_htt.dart';
-import 'package:hydraledger_recorder/services/sqflite_service.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/models/vocie_save_model.dart';
+import 'package:voice_recorder/services/fs3/fs3_upload_htt.dart';
+import 'package:voice_recorder/services/sqflite_service.dart';
 
 class AddWitnessScreen extends StatefulWidget {
   final PersistentTabController? controller;

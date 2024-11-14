@@ -5,7 +5,7 @@ import 'package:just_audio/just_audio.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:video_player/video_player.dart';
 import 'package:http/http.dart' as http;
-import 'package:hydraledger_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class PreviewUploadedContent extends StatefulWidget {

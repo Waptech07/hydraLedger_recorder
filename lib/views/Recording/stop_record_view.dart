@@ -11,8 +11,8 @@ import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/views/image/image_preview.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/views/image/image_preview.dart';
 
 import 'name_record.dart';
 

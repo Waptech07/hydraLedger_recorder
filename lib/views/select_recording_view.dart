@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/api/subscriptionmanager.dart';
-import 'package:hydraledger_recorder/views/homepage/home_screen.dart';
-import 'package:hydraledger_recorder/widget/select_button.dart';
+import 'package:voice_recorder/api/subscriptionmanager.dart';
+import 'package:voice_recorder/views/homepage/home_screen.dart';
+import 'package:voice_recorder/widget/select_button.dart';
 
 class SelectRecordingType extends StatelessWidget {
   final PersistentTabController controller;

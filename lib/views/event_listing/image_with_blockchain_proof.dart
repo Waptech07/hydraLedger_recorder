@@ -10,12 +10,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:video_player/video_player.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/models/pdf_save_model.dart';
-import 'package:hydraledger_recorder/services/sqflite_service.dart';
-import 'package:hydraledger_recorder/utils/helpers.dart';
-import 'package:hydraledger_recorder/utils/pdf/pdf_file.dart';
-import 'package:hydraledger_recorder/utils/pdf/save_pdf.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/models/pdf_save_model.dart';
+import 'package:voice_recorder/services/sqflite_service.dart';
+import 'package:voice_recorder/utils/helpers.dart';
+import 'package:voice_recorder/utils/pdf/pdf_file.dart';
+import 'package:voice_recorder/utils/pdf/save_pdf.dart';
 
 class ImageWithBlockchainProof extends StatefulWidget {
   final Map<String, dynamic>? item;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:hydraledger_recorder/constants/color_constants.dart';
-import 'package:hydraledger_recorder/views/event_listing/event_listing.dart';
-import 'package:hydraledger_recorder/views/profile/profile.dart';
-import 'package:hydraledger_recorder/views/select_recording_view.dart';
+import 'package:voice_recorder/constants/color_constants.dart';
+import 'package:voice_recorder/views/event_listing/event_listing.dart';
+import 'package:voice_recorder/views/profile/profile.dart';
+import 'package:voice_recorder/views/select_recording_view.dart';
 
 class AppBottomNavBar extends StatefulWidget {
   final int? initialIndex;
